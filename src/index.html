@@ -8,22 +8,20 @@
   </head>
   <body class="flex justify-center items-center h-screen bg-slate-200">
     <div class="bg-white rounded shadow-lg w-96 p-8">
-      <h1 class="text-blue font-bold text-2xl text-center mb-4">Login</h1>
       <!-- login form -->
       <div id="login-form">
+        <h1 class="text-blue font-bold text-2xl text-center mb-4">Login</h1>
         <input
           type="text"
           id="username"
           class="border rounded w-full p-2 mb-2"
           placeholder="Username"
-          required
         />
         <input
           type="password"
           id="password"
           class="border rounded w-full p-2 mb-2"
           placeholder="Password"
-          required
         />
         <button
           onclick="login()"
@@ -33,11 +31,11 @@
         </button>
         <p id="message" class="text-red-500 text-center text-sm"></p>
       </div>
-      `
+
       <!-- dashboard -->
       <div id="dashboard" class="hidden text-center">
         <h3 class="text-xl font-semibold">
-          Welcome, <span id="user-name"></span>! 🎉
+          Welcome, <span id="user-name"></span>!
         </h3>
         <button
           onclick="logout()"
@@ -47,5 +45,6 @@
         </button>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
